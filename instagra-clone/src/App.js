@@ -9,7 +9,7 @@ import { loginUser, setLoading } from "./features/userSlice";
 function App() {
   const dispatch = useDispatch();
 
-  useEffect(() => {t
+  useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
       if (authUser) {
         dispatch(
